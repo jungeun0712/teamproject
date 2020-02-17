@@ -1,0 +1,1019 @@
+@charset "UTF-8";
+#my_b_b {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 900;
+	color: black;
+	font-size: 36px;
+}
+
+#my_l_b {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 200;
+	color: black;
+	font-size: 16px;
+}
+
+#my_bb_b {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 900;
+	color: black;
+	font-size: 25px;
+}
+
+#my_ll_b {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 200;
+	color: black;
+	font-size: 20px;
+}
+
+.select_item {
+	padding-top: 26px;
+	padding-bottom: 0px;
+	font-weight: bold;
+	font-size: 25px;
+	letter-spacing: -0.2px;
+	color: rgb(154, 154, 158);
+	cursor: pointer;
+	border-bottom: 0px;
+}
+
+@media ( min-width : 769px) {
+	.select_item {
+		color: rgb(0, 0, 0);
+		padding-bottom: 11px;
+	}
+}
+
+.select_item_list1:first-child {
+	border-top: 0px;
+}
+
+.select_item_list1 {
+	position: relative;
+	width: 100%;
+	margin-left: 0px;
+	padding: 15px 0px;
+	border-top: 1px solid rgb(242, 242, 242);
+}
+
+.select_item_list1_img {
+	display: flex;
+}
+
+.img_span {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin-right: 13px;
+	overflow: hidden;
+}
+
+.item_option {
+	position: relative;
+	float: left;
+	width: calc(100% - 115px);
+	padding-top: 5px;
+}
+
+.item_name {
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow-wrap: normal;
+	width: calc(100% - 30px);
+	padding-bottom: 5px;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: normal;
+	overflow: hidden;
+}
+
+.space_p {
+	width: 100%;
+	height: 19px;
+	margin-top: 3px;
+	font-size: 13px;
+	color: rgb(255, 0, 50);
+}
+
+.item_option2 {
+	position: relative;
+	text-align: right;
+	font-size: 16px;
+	letter-spacing: -0.2px;
+	padding-top: 5px;
+	margin: 10px 0px 6px;
+}
+
+.quantity_chk{
+	text-align: right;
+}
+
+.selc_del {
+	position: absolute;
+	top: 18px;
+	right: 0px;
+	width: 20px;
+	height: 26px;
+	text-indent: -999em;
+	font-size: 1px;
+	background:
+		url(https://t1.kakaocdn.net/friends/new_store/btn_remove.png) center
+		center/14px no-repeat;
+}
+
+#order_item_list {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+@media ( min-width : 769px) {
+	#order_item_list {
+		width: auto;
+		padding-top: 20px;
+		/* 		border-top: 1px solid rgb(227, 229, 232); */
+	}
+}
+
+@media ( min-width : 769px) {
+	.order_item_list_padding {
+		width: 640px;
+		padding-bottom: 60px;
+		margin: 0px auto;
+	}
+}
+
+.order_item_list_padding {
+	min-height: 0px;
+}
+
+.select_quantity_div {
+	position: absolute;
+	left: 113px;
+	top: 77px;
+	width: 80px;
+	height: 35px;
+	background:
+		url(https://t1.kakaocdn.net/friends/new_store/ico_dropdown.png) right
+		8px center/12px no-repeat;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(227, 229, 232);
+	border-image: initial;
+	border-radius: 4px;
+}
+
+.select_quantity_div_label {
+	line-height: 35px;
+	width: 100%;
+	position: relative;
+	display: block;
+	color: rgb(0, 0, 0);
+}
+
+.select_quantity {
+	width: 100%;
+	height: 35px;
+	line-height: 100%;
+	opacity: 0;
+	padding: 0px 10px;
+}
+
+.select_quantity_div_label::before {
+	content: "1";
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	line-height: 35px;
+	height: 35px;
+	font-size: 15px;
+}
+
+.listinfo_total_price {
+	padding-top: 22px;
+	margin-top: 0px;
+	border-top: 1px solid rgb(245, 246, 246);
+}
+
+.total_info {
+	line-height: 30px;
+	height: 30px;
+}
+
+.total_info:last-child * {
+	font-weight: bold;
+}
+
+.total_price {
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.total_price_1 {
+	float: right;
+	text-align: right;
+	font-size: 16px;
+}
+
+div {
+	display: block;
+}
+
+.address {
+	position: relative;
+	margin: 0px;
+	padding: 0px 0px 25px;
+	border-bottom: 1px solid rgb(227, 229, 232);
+}
+@media ( min-width : 769px) {
+	.address {
+		padding-bottom: 50px;
+		border-color: rgb(0, 0, 0);
+	}
+}
+
+.purchase {
+	position: relative;
+	margin: 0px;
+	padding: 0px 0px 20px;
+	border-bottom: 1px solid rgb(227, 229, 232);
+}
+
+.purchase_pay_btn_div{
+	position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.purchase_btn1 {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+@media ( min-width : 769px) {
+	.purchase_btn1 {
+		margin-bottom: 140px;
+	}
+}
+.purchase_btn2 {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    background: rgb(212, 215, 225);
+}
+
+.recipient_info {
+	max-height: 515px;
+	transform-origin: center top;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out 0s;
+}
+
+@media ( min-width : 769px) {
+	.recipient_info {
+		min-height: 515px;
+	}
+}
+
+.recipient_info_1 {
+	display: flex;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	padding-top: 10px;
+	margin-bottom: 7px;
+}
+
+.recipient_1 {
+	height: 35px;
+	padding-top: 11px;
+	font-size: 16px;
+}
+
+.order_same_div1 {
+	-webkit-box-pack: end;
+	justify-content: flex-end;
+}
+
+.order_same_div2 {
+	display: flex;
+	min-width: 200px;
+	-webkit-box-align: center;
+	align-items: center;
+	position: static;
+	line-height: 22px;
+	flex: 1 1 0%;
+}
+
+.order_primary_1 {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-bottom: auto;
+}
+/*==========================================*/
+h4 {
+	display: block;
+	margin-block-start: 1.33em;
+	margin-block-end: 1.33em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	font-weight: bold;
+}
+
+option {
+	font-weight: normal;
+	display: block;
+	white-space: pre;
+	min-height: 1.2em;
+	padding: 0px 2px 1px;
+}
+/*==========================================*/
+.order_same_div1 label { /* div 첫번째 이름 클래스의 label */
+	text-align: right;
+}
+
+.order_same_div1_label { /* label 클래스  */
+	max-width: calc(100% - 48px);
+	padding-top: 1px;
+	font-size: 15px;
+	letter-spacing: -0.2px;
+	margin: 0px 10px;
+}
+
+.order_primary_1 label { /* 체크버튼 div의 label */
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background:
+		url(https://t1.kakaocdn.net/friends/new_store/ico_checked.png) center
+		0px/25px no-repeat;
+}
+
+.order_primary_1:checked+label { /* 체크버튼이 체크 되어있을때의 label */
+	background:
+		url(https://t1.kakaocdn.net/friends/new_store/ico_checked_ok.png)
+		center 0px/25px no-repeat;
+}
+
+.order_primary {
+	visibility: hidden;
+}
+
+input:checked[type='checkbox'] {
+	background-color: #666;
+	-webkit-appearance: checkbox;
+}
+
+.order_info { /* 주문자 정보 div */
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-bottom: 8px;
+	line-height: 35px;
+}
+
+.order_info_list {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	line-height: 23px;
+	font-size: 16px;
+	-webkit-appearance: none;
+	text-align: left;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(227, 229, 232);
+	border-image: initial;
+	outline: none;
+	padding: 10px 15px;
+	background: none;
+	border-radius: 4px !important;
+}
+
+.order_label { /* 주문자 이름 라벨  */
+	line-height: 35px;
+	width: 100%;
+	position: relative;
+	display: block;
+	color: rgb(0, 0, 0);
+}
+
+input {
+	-webkit-writing-mode: horizontal-tb !important;
+	text-rendering: auto;
+	color: -internal-light-dark-color(black, white);
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+	-webkit-appearance: textfield;
+	background-color: -internal-light-dark-color(white, black);
+	-webkit-rtl-ordering: logical;
+	cursor: text;
+	margin: 0em;
+	font: 400 13.3333px Arial;
+	padding: 1px 0px;
+	border-width: 2px;
+	/* border-style: inset; */
+	border-color: initial;
+	border-image: initial;
+}
+
+.request {
+	width: 100%;
+	height: 100px;
+	font-size: 16px;
+	line-height: 1.5;
+	-webkit-appearance: none;
+	resize: none;
+	padding: 15px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgb(227, 229, 232);
+	border-image: initial;
+	border-radius: 4px;
+	background: none;
+	outline: none;
+}
+
+.max_length {
+	margin-top: 5px;
+	padding-bottom: 15px;
+	color: rgb(154, 154, 154);
+	font-size: 13px;
+}
+
+.pay {
+	position: relative;
+	margin: 0px;
+	padding: 0px 0px 25px;
+}
+
+@media ( min-width : 769px) {
+	.pay {
+		padding-bottom: 50px;
+		border-color: rgb(0, 0, 0);
+	}
+}
+
+.topay {
+	max-height: 0px;
+	transform-origin: center top;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out 0s;
+}
+
+@media ( min-width : 769px) {
+	.topay {
+		min-height: 800px;
+	}
+}
+
+.topay_1 {
+	padding-bottom: 70px;
+}
+
+.point_info {
+	position: absolute;
+	top: 55px;
+	right: 18px;
+	color: rgb(154, 154, 158);
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+@media ( min-width : 769px) {
+	.point_info {
+		right: 0px;
+	}
+}
+.topay_space {
+    padding-top: 14px;
+}
+.pay_list_space_all{
+	margin-bottom: 15px;
+}
+.pay_list_space {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7px;
+}
+.pay_info_list {
+    width: 40%;
+    min-width: 130px;
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.order_item_price  {
+    font-weight: bold;
+}
+
+.order_item_price_all{
+	width: 60%;
+    font-size: 15px;
+    text-align: right;
+}
+.point {
+    min-width: 50%;
+    max-width: 50%;
+    height: 38px;
+    line-height: normal;
+    padding: 6px 0px;
+}
+.point_op {
+    display: inline-block;
+    margin-left: 4px;
+    color: rgb(0, 135, 255);
+    letter-spacing: -0.2px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 50px;
+}
+.point_bank {
+    position: relative;
+    display: block;
+    width: 50%;
+    margin-bottom: 8px;
+    line-height: 35px;
+    text-align: right;
+}
+
+.point_bank1 {
+    position: relative;
+    height: auto;
+    line-height: 23px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    width: 100%;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(227, 229, 232);
+    border-image: initial;
+    outline: none;
+    padding: 10px 15px;
+    background: none;
+    border-radius: 4px !important;
+}
+
+.input_coin {
+    position: relative;
+    height: auto;
+    line-height: 23px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    width: 50%;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(227, 229, 232);
+    border-image: initial;
+    outline: none;
+    padding: 10px 15px;
+    background: none;
+    border-radius: 4px !important;
+}
+.final_order_price {
+    line-height: 37px;
+    font-weight: bold;
+}
+.final_order_price1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.pay_method {
+    margin-top: 20px;
+    padding-top: 5px;
+    border-top: 1px solid rgb(245, 246, 246);
+}
+#pay_method_or_1{
+	color: rgb(0, 0, 0);
+    z-index: 1;
+    order: 1;
+    border-color: rgb(0, 0, 0);
+    background: url(https://t1.kakaocdn.net/friends/new_store/payment_creditcard_default.png) center center / auto 28px no-repeat;
+}
+
+#pay_method_or_2{
+	z-index: 1;
+    order: 2;
+    border-left: 0px;
+    background: url('../icon/payment_kakaopay_selected.png')
+}
+/*
+#pay_method_all {
+    display: block;
+    width: 50%;
+    height: auto;
+    padding-top: 35px;
+    text-align: center;
+    color: rgb(212, 215, 225);
+    font-weight: bold;
+    font-size: 13px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(227, 229, 232);
+} */
+
+#bank{
+	border-color: black;
+	border-width: 0px 0px 3.5px 0px;
+	background-color: #fff;
+}
+#amount{
+	position: relative;
+    height: auto;
+    line-height: 23px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    width: 40%;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(227, 229, 232);
+    border-image: initial;
+    outline: none;
+    padding: 10px 15px;
+    background: none;
+    border-radius: 4px !important;
+}
+input[type=text] #payer{
+	border-radius: 4px;
+	border: 1px solid black;
+}
+.payment {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: 0px 0px 10px;
+}
+.check_payment1 {
+    max-width: calc(100% - 48px);
+    padding-top: 1px;
+    font-size: 15px;
+    letter-spacing: -0.2px;
+    margin: 0px 10px;
+}
+.payment_agree {
+    text-decoration: underline;
+}
+.musthave {
+    margin-left: 7px;
+    color: rgb(154, 154, 158);
+    font-size: 13px;
+}
+.pay_select{
+	display: block;
+    width: 100%;
+    height: 160px;
+/*     padding-top: 10px; */
+    text-align: center;
+    color: rgb(212, 215, 225);
+    font-weight: bold;
+    font-size: 13px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(227, 229, 232);	
+}
+
+.pay_select>a{
+	color: black;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    border-color: rgb(0, 0, 0);
+}
+.input_info{ /* 입금 정보 */
+	padding-top: 5px;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #fff;
+	background-color: rgb(212, 215, 225);
+	height: 40px;
+}
+.all_bank_info{
+	padding-top: 20px;
+}
+.input_bank_info{ /* 입금 은행 정보 */
+	width: 100%;
+	height: auto;
+	font-size: 12px;
+}
+
+.input_bank{
+	display: inline-block;
+	width: auto;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: grey;
+	float: center;
+	text-align: center;
+}
+.bank_account{
+	font-size: 15px;
+	color: grey;
+	float: center;
+}
+.input_pay{
+	color: #000; 
+	font-size: 15px;
+}
+.bank_line{
+	border-bottom: 2px solid #2216d7;
+}
+.bank_info_line{
+	border-bottom: 2px solid #2216d7;
+}
+.bank_div{
+	margin: auto;
+	width: 80%;
+	height: 40px;
+	margin-left: 85px; 
+}
+
+
+.paychk {
+    position: relative;
+    margin: 0px;
+}
+@media ( min-width : 769px) {
+	.paychk {
+		border-color: rgb(0, 0, 0);
+	}
+}
+
+
+.address {
+    position: relative;
+    margin: 0px;
+    padding: 0px 0px 25px;
+    border-bottom: 1px solid rgb(227, 229, 232);
+}
+@media ( min-width : 769px) {
+	.address {
+		padding-bottom: 50px;
+		border-color: rgb(0, 0, 0);
+	}
+}
+.order_info_list_chk{
+	position: relative;
+    width: 70%;
+    height: 100%;
+    line-height: 23px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    text-align: left;
+    border-width: 1px;
+    border-color: rgb(227, 229, 232);
+    border-image: initial;
+    outline: none;
+    padding: 10px 15px;
+    background: none;
+    border-radius: 4px !important;
+}
+
+.select_item_chk {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-weight: bold;
+	font-size: 25px;
+	letter-spacing: -0.2px;
+	color: #fff;
+	cursor: pointer;
+	border-bottom: 0px;
+	background-color:#ffcd28;
+	margin-bottom: 20px;
+}
+
+@media ( min-width : 769px) {
+	.select_item_chk {
+		color: #fff;
+		padding-bottom: 25px;
+	}
+}
+
+.recipient_info_chk {
+	max-height: 100%;
+	transform-origin: center top;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out 0s;
+	padding-left: 10px;
+}
+
+@media ( min-width : 769px) {
+	.recipient_info_chk {
+		min-height: 200px;
+		padding-left: 10px;
+	}
+}
+
+.address_chk {
+	position: relative;
+	margin: 0px;
+	border-bottom: 1px solid #ffcd28;
+}
+
+@media ( min-width : 769px) {
+	.address_chk {
+		border-color:#ffcd28;
+	}
+}
+/* .point_bank1_chk {
+	text-align: right;
+    position: relative;
+    height: auto;
+    line-height: 23px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    width: 100%;
+    text-align: right;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(227, 229, 232);
+    border-image: initial;
+    outline: none;
+    padding: 10px 15px;
+    background: none;
+    border-radius: 4px !important;
+} */
+
+
+.gnUPDE {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    border-top: 1px solid rgb(245, 246, 246);
+}
+
+.eXCEHT {
+    height: 38px;
+    padding-top: 20px;
+}
+.hEmcBO {
+    height: 35px;
+    padding-top: 11px;
+    font-size: 16px;
+}
+
+.bTGpxc {
+    height: 114px;
+    margin-bottom: 15px;
+    display: flex;
+}
+.eQJwuJ {
+    color: rgb(154, 154, 158);
+    background: rgb(247, 247, 247);
+}
+
+
+.gpTPcQ {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.gnuFcY {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.fjMMAF {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    background: rgb(212, 215, 225);
+}
+.cOvGPB {
+    opacity: 1e-10;
+    position: absolute;
+    top: 7px;
+    left: 0px;
+    right: 0px;
+    display: none;
+    z-index: 1000;
+}
+
+.fGXiOr {
+    display: block;
+    width: calc(50% - 3px);
+    height: 116px;
+    padding-top: 35px;
+    text-align: center;
+    color: rgb(212, 215, 225);
+    font-weight: bold;
+    font-size: 13px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(227, 229, 232);
+    border-image: initial;
+}
+.hGROIq::before {
+    height: 28px;
+    background: url(https://t1.kakaocdn.net/friends/new_store/payment_kakaopay_selected.png) center center / auto 21px no-repeat;
+}
+.fGXiOr::before {
+    content: "";
+    display: block;
+    margin-bottom: 18px;
+}
+.bTGpxc input {
+    display: none;
+}
+.dvFqbk {
+    z-index: 1;
+    order: 1;
+    border-right: 0px;
+}
+.dvFqbk::before {
+    height: 28px;
+    background: url(https://t1.kakaocdn.net/friends/new_store/payment_kakaopay_default.png) center center / auto 21px no-repeat;
+}
+.cDurlB {
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    order: 2;
+    border-color: rgb(0, 0, 0);
+}
+.cDurlB::before {
+    height: 28px;
+    background: url(https://t1.kakaocdn.net/friends/new_store/payment_creditcard_selected.png) center center / auto 28px no-repeat;
+}
+.gmaalp::before {
+    height: 28px;
+    background: url(https://t1.kakaocdn.net/friends/new_store/payment_creditcard_default.png) center center / auto 28px no-repeat;
+}
+.gmaalp {
+    z-index: 1;
+    order: 2;
+    border-left: 0px;
+}
+.hGROIq {
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    order: 1;
+    border-color: rgb(0, 0, 0);
+}
+.jxRlNC {
+    background: rgb(255, 234, 1);
+}
+.zEfhD {
+    position: relative;
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 18px;
+}
+.zEfhD::after {
+    content: "";
+    position: absolute;
+    top: -9px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+.jxRlNC::after {
+    left: calc(25vw - 12px);
+    border-bottom: 10px solid rgb(255, 234, 1);
+}
+.eQJwuJ::after {
+    right: calc(25vw - 12px);
+    border-bottom: 10px solid rgb(247, 247, 247);
+}
+
+@media (min-width: 769px){
+	.eQJwuJ::after {
+    right: 160px;
+}
+	.jxRlNC::after {
+    left: 160px;
+}
+.gnuFcY {
+    margin-bottom: 140px;
+}

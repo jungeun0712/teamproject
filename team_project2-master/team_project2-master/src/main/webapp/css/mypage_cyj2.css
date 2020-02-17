@@ -1,0 +1,33 @@
+.checkname {
+	height: 12vw;
+	padding: 3.2vw 4vw;
+	font-size: 4.2666666667vw;
+	letter-spacing: -0.056vw;
+	border-radius: 1.0666666667vw;
+}
+
+@media ( min-width : 768px) {
+	.checkname {
+		height: 80%;
+		font-size: 15px;
+		letter-spacing: normal;
+		padding: 12px 15px;
+		border-radius: 4px;
+		width: 17%;
+	}
+}
+.input_checkname {
+	position: relative;
+	border: 1px solid #e3e5e8;
+	border-radius: 1.0666666667vw;
+	margin-top: 1.8666666667vw;
+}
+
+@media ( min-width : 768px) {
+	.input_checkname {
+		flex: 1;
+		position: relative;
+		border-radius: 0;
+		margin-top: 0;
+	}
+}

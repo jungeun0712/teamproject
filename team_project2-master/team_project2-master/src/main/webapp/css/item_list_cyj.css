@@ -1,0 +1,107 @@
+.sub_cate {
+    position: relative;
+}
+.sub_cate_in1{
+    position: absolute;
+    width: 1080px;
+    height: 58px;
+    box-sizing: border-box;
+    top: 0px;
+    z-index: -1;
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+.sub_cate_in2 {
+    border-bottom: 1px solid rgb(242, 242, 242);
+}
+@media (min-width: 769px){
+.sub_cate_in2{
+    border-bottom: none;
+}}
+.sub_cate_in2 div {
+    display: flex;
+    min-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-wrap: normal;
+}
+@media (min-width: 769px){
+.sub_cate_in2 div {
+    flex-wrap: wrap;
+}}
+.sub_cate_btn1 {
+    display: flex;
+    min-height: 51px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.19px;
+    margin-right: 17px;
+    color: rgb(154, 154, 158);
+    outline: none;
+    padding: 0px 4px;
+}
+@media (min-width: 769px){
+.sub_cate_btn1{
+    font-size: 17px;
+    min-height: 58px;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    margin: 0px;
+}}
+.sub_cate_btn1:first-child {
+    margin-left: 16px;
+}
+@media (min-width: 769px){
+.sub_cate_btn1:first-child {
+    margin-left: 0px;
+}}
+.sub_cate_btn2 { <!-- 눌렸을 때 -->
+    display: flex;
+    min-height: 51px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.19px;
+    margin-right: 17px;
+    color: rgb(0, 0, 0);
+    outline: none;
+    padding: 1px 4px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+@media (min-width: 769px){
+.sub_cate_btn2 { <!-- 눌렸을 때 -->
+    font-size: 17px;
+    min-height: 58px;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    margin: 0px;
+}}
+.sub_cate_btn3 {
+    display: flex;
+    min-height: 51px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -0.19px;
+    margin-right: 17px;
+    color: rgb(154, 154, 158);
+    outline: none;
+    padding: 0px 4px;
+}
+@media (min-width: 769px){
+.sub_cate_btn3 {
+    font-size: 17px;
+    min-height: 58px;
+    box-sizing: border-box;
+    padding: 0px 15px;
+    margin: 0px;
+}}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="euc-kr" ?>
+<decorators defaultdir="/decorator">
+	<decorator name="main" page="decorator.jsp">
+		<pattern>/index*</pattern>
+		
+	</decorator>
+	<!-- 상품리스트 -->
+	<decorator name="main2" page="decorator2.jsp">
+		<pattern>/help*</pattern>
+<!-- 		<pattern>/item/list*</pattern> -->
+	
+	</decorator>
+	<!-- 매장소개 -->
+	<decorator name="main3" page="decorator3.jsp">
+		<pattern>/info/*</pattern>
+	</decorator>
+	<decorator name="main4" page="decorator4.jsp">
+
+		<!-- <pattern>/order/dir*</pattern> -->
+		<pattern>/user/sign*</pattern>
+		<!-- <pattern>/item/product*</pattern> -->
+	</decorator>
+	<decorator name="main5" page="decorator5.jsp">
+		<pattern>/mypage/*</pattern>
+		<pattern>/item/product*</pattern>
+		<pattern>/item/list*</pattern>
+		<pattern>/item/cart*</pattern>
+		<pattern>/item/review*</pattern>
+		<pattern>/item/search*</pattern><!-- 임시로 -->	
+		<pattern>/nonmember/nonmem*</pattern>
+		<pattern>/order/*</pattern>
+	</decorator>
+	<decorator name="main7" page="decorator7.jsp">
+		<pattern>/admin/*</pattern>
+		<pattern>/item/*</pattern>
+		<pattern>/admin*</pattern>
+	</decorator>
+	<!-- layout 제외 -->
+	<excludes></excludes>
+</decorators>
